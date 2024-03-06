@@ -1,4 +1,4 @@
-module example.com/hello
+module github.com/hello-world-examples/hello
 
 go 1.22.0
 

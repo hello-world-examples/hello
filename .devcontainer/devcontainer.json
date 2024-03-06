@@ -1,4 +1,8 @@
 {
 	"name": "Go",
-	"image": "mcr.microsoft.com/devcontainers/go:1-1.22-bookworm"
+	"image": "mcr.microsoft.com/devcontainers/go:1-1.22-bookworm",
+	"mounts": [
+		"source=/home/iresh/.ssh/id_rsa.pub,target=/home/vscode/.ssh/id_rsa.pub,type=bind,consistency=cached",
+		"source=/home/iresh/.ssh/id_rsa,target=/home/vscode/.ssh/id_rsa,type=bind,consistency=cached"
+	]
 }
